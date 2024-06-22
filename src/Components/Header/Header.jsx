@@ -93,17 +93,25 @@ const Header = () => {
 
                             {
                                 cartShow && (
-                                    <div className="absolute right-0 top-[50px] w-[360px] border border-b-gray-50 bg-primary text-[#BEBEBE] font-dm ">
-                                        <div>
+                                    <div className="absolute right-0 top-[50px] w-[360px] border border-b-gray-50  text-[#BEBEBE] font-dm shadow">
+                                        <Flex className='justify-between items-center p-5 bg-[#f5f5f5]'>
                                             <img src={cartimg} alt="" height={250} width={100} />
-                                            <p>Black Smart watch</p>
-                                            <p>$44.39</p>
-                                            <div>
-                                                <RxCross1 />
+                                            <div className="justify-between">
+                                                <p className="text-base font-dm text-primary font-bold">Black Smart watch</p>
+                                                <p className="text-base font-dm text-primary font-bold">$44.39</p>
                                             </div>
-                                        </div>
-                                        <div>
-
+                                            <div className="">
+                                                <RxCross1 className="font-bold ml-2 text-primary" />
+                                            </div>
+                                        </Flex>
+                                        <div className=" p-5 text-primary">
+                                            <div >
+                                                <p className="font-dm text-[#767676] text-base">subtotal : <span className="font-dm text-base font-bold text-primary">$44.99</span></p>
+                                            </div>
+                                            <div className="mt-[13px]">
+                                                <button className="py-4 px-8 border border-primary font-dm font-bold text-primary  text-[13px] ">View Cart</button>
+                                                <button className="py-4 px-8 border border-primary ml-3  font-dm font-bold text-primary text-[13px]  ">Check Out</button>
+                                            </div>
                                         </div>
                                     </div>
                                 )
