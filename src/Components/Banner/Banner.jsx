@@ -59,17 +59,17 @@ const Banner = () => {
     };
     return (
         <div className="slider-container">
-            <Slider {...settings}>
-                <div>
+            <Slider {...settings} >
+                <div className="outline-none">
                     <img src={banner} alt="" />
                 </div>
-                <div>
+                <div className="outline-none">
+                    <img src={banner} alt="" />
+                </div >
+                <div className="outline-none">
                     <img src={banner} alt="" />
                 </div>
-                <div>
-                    <img src={banner} alt="" />
-                </div>
-                <div>
+                <div className="outline-none">
                     <img src={banner} alt="" />
                 </div>
             </Slider>

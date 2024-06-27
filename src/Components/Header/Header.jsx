@@ -47,7 +47,7 @@ const Header = () => {
             <Container>
                 <Flex className='justify-between items-center'>
                     <div>
-                        <DropDown dropRef={catergoryRef}>
+                        <DropDown className="z-50 relative" dropRef={catergoryRef}>
                             <div className="flex items-center gap-2.5 cursor-pointer">
                                 <FaBarsStaggered className="text-[18px]" />
                                 <p className="font-dm text-base">Shop by Category</p>
@@ -72,7 +72,7 @@ const Header = () => {
                         <FaSearch className="absolute top-5 right-5" />
                     </div>
                     <div className="flex gap-10  justify-center">
-                        <DropDown className='relative' dropRef={userRef}>
+                        <DropDown className=' z-50 relative' dropRef={userRef}>
                             <div className="flex items-center ">
                                 <IoPersonSharp className="text-xl" />
                                 <RxTriangleDown />
@@ -86,7 +86,7 @@ const Header = () => {
                                 )
                             }
                         </DropDown>
-                        <DropDown className='relative' dropRef={cartRef}>
+                        <DropDown className='z-50 relative' dropRef={cartRef}>
                             <div>
                                 <HiShoppingCart className="text-xl" />
                             </div>
