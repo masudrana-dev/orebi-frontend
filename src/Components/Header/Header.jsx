@@ -43,9 +43,9 @@ const Header = () => {
     }, [])
 
     return (
-        <div className="bg-[#F5F5F3] py-10">
+        <div className="bg-[#F5F5F3] py-10 ">
             <Container>
-                <Flex className='justify-between items-center'>
+                <div className=' hidden md:flex justify-between items-center'>
                     <div>
                         <DropDown className="z-50 relative" dropRef={catergoryRef}>
                             <div className="flex items-center gap-2.5 cursor-pointer">
@@ -118,7 +118,7 @@ const Header = () => {
                             }
                         </DropDown>
                     </div>
-                </Flex>
+                </div>
             </Container>
         </div>
     )
