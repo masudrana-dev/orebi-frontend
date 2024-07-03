@@ -1,15 +1,14 @@
 import { TfiReload } from "react-icons/tfi";
-import p1 from '../../assets/p-1.png'
 import Badge from './Badge'
 import Flex from '../Layout/Flex'
 import { FaHeart } from "react-icons/fa6";
 import { IoCart } from "react-icons/io5";
-
-const Product = ({ badge }) => {
+import p2 from '../../assets/p5.png'
+const Product2 = ({ badge }) => {
     return (
         <div>
             <div className='relative overflow-y-hidden group'>
-                <img src={p1} alt="" className='w-full' />
+                <img src={p2} alt="" className='w-full' />
                 {
                     badge &&
                     <Badge title='New' />
@@ -41,4 +40,4 @@ const Product = ({ badge }) => {
     )
 }
 
-export default Product
+export default Product2
