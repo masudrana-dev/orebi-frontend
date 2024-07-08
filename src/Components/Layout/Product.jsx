@@ -8,7 +8,7 @@ import { IoCart } from "react-icons/io5";
 const Product = ({ badge }) => {
     return (
         <div>
-            <div className='relative overflow-y-hidden group'>
+            <div className='relative grid gird-cols-6 overflow-y-hidden group'>
                 <img src={p1} alt="" className='w-full' />
                 {
                     badge &&
