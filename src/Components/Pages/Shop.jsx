@@ -10,7 +10,7 @@ const shop = () => {
             <Container className="mt-[130px]">
                 <Flex className="gap-x-10">
                     <div className="w-1/4 bg-red-600">hello</div>
-                    <div className="w-3/4 ">
+                    <div className="w-3/4 relative ">
                         <Pagination itemsPerPage={12} />
                     </div>
                 </Flex>
